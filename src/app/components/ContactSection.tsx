@@ -5,10 +5,10 @@ import Image from "next/image";
 const ContactSection: React.FC = () => {
   return (
     <Section
-      title={"• Contact"}
+      title={"Contact"}
       subtitle="I am open to new roles in Paris, Zurich and remote. If my profile sparked your interest, feel free to reach out with any questions or inquiries and I will get back to you quickly."
     >
-      <div className="flex flex-col space-y-12 px-32 pb-32 overflow-hidden">
+      <div className="flex flex-col space-y-12 px-32 overflow-hidden">
         <div className="flex flex-row items-center space-x-8">
           <Image
             src="/images/valentinlugandlopez.png"

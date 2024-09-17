@@ -5,7 +5,7 @@ import OrganizationBlock from "./OrganizationBlock";
 const EducationSection: React.FC = () => {
   return (
     <Section
-      title={"• Education"}
+      title={"Education"}
       subtitle="With hands-on coding expertise from the 42 Paris, complemented by an entrepreneurship course at HEC and a Master’s in International Business, my education blends strategic thinking with technical expertise."
     >
       <OrganizationBlock

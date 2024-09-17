@@ -12,7 +12,7 @@ export default function Home() {
           to new exciting opportunities.
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center space-y-64">
+      <div className="flex flex-col items-center justify-center space-y-16">
         <AboutSection />
         <ExperienceSection />
         <EducationSection />

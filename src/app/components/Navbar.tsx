@@ -25,10 +25,10 @@ const Navbar: React.FC = () => {
         <span className="uppercase font-bold">Valentin Lugand Lopez</span>
       </Link>
       <div className="hidden lg:flex flex-row space-x-16 uppercase">
-        <Link href="#about">About me</Link>
-        <Link href="#experience">Experience</Link>
-        <Link href="#education">Education</Link>
-        <Link href="#contact">Contact</Link>
+        <Link href="/#aboutme">About me</Link>
+        <Link href="/#experience">Experience</Link>
+        <Link href="/#education">Education</Link>
+        <Link href="/#contact">Contact</Link>
       </div>
       <Button className="hidden lg:flex">Resume</Button>
       <BurgerButton

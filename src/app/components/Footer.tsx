@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <FaGithub size={20} />
         </div>
       </div>
-      <span>© 2024 Valentin Lugand Lopez</span>
+      <span>© 2024 valentinlugandlopez.dev</span>
     </footer>
   );
 };

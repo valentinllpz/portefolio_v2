@@ -5,7 +5,7 @@ import OrganizationBlock from "./OrganizationBlock";
 const ExperienceSection: React.FC = () => {
   return (
     <Section
-      title={"• Experience"}
+      title={"Experience"}
       subtitle="Combining my background in sales and full stack development, I leverage technical skills and client-focused insights to deliver well-rounded solutions and collaborate effectively across teams."
     >
       <OrganizationBlock
