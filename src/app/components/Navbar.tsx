@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const [openMobileMenu, setOpenMobileMenu] = React.useState(false);
 
   return (
-    <nav className="fixed flex justify-between items-center w-full z-20 h-16 px-4 lg:px-12 bg-dark/[0.8] backdrop-blur-2xl">
+    <nav className="fixed flex justify-between items-center w-full z-20 h-16 px-4 lg:px-12 bg-gradient-to-b from-dark to-transparent">
       <Link
         href="/"
         onClick={() => setOpenMobileMenu(false)}

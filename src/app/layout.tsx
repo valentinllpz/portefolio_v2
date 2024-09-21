@@ -52,11 +52,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark text-light scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
       >
         <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <div className="bg-dark/80 backdrop-blur-3xl">
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

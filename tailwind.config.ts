@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      dark: "#20282E",
+      dark: "#1D252B",
       light: "#F6F3EC",
       transparent: "#FFFFFF00",
       "primary-blue": "#487ADA",
