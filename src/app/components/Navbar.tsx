@@ -5,6 +5,7 @@ import Image from "next/image";
 import BurgerButton from "./BurgerButton";
 import MobileMenu from "./MobileMenu";
 import Button from "./Button";
+import MenuItem from "./MenuItem";
 
 const Navbar: React.FC = () => {
   const [openMobileMenu, setOpenMobileMenu] = React.useState(false);
@@ -24,11 +25,11 @@ const Navbar: React.FC = () => {
         />
         <span className="uppercase font-bold">Valentin Lugand Lopez</span>
       </Link>
-      <div className="hidden lg:flex flex-row space-x-16 uppercase">
-        <Link href="/#aboutme">About me</Link>
-        <Link href="/#experience">Experience</Link>
-        <Link href="/#education">Education</Link>
-        <Link href="/#contact">Contact</Link>
+      <div className="hidden lg:flex flex-row space-x-12 uppercase text-sm">
+        <MenuItem href="/#aboutme">About me</MenuItem>
+        <MenuItem href="/#experience">Experience</MenuItem>
+        <MenuItem href="/#education">Education</MenuItem>
+        <MenuItem href="/#contact">Contact</MenuItem>
       </div>
       <Button className="hidden lg:flex">Resume</Button>
       <BurgerButton
