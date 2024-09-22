@@ -14,9 +14,8 @@ const config: Config = {
       "primary-blue": "#487ADA",
     },
     fontFamily: {
-      rand: ["var(--font-rand)"],
-      microgramma: ["var(--font-microgramma)"],
-      sohneBreit: ["var(--font-sohneBreit)"],
+      integralCF: ["var(--font-integralCF)", "sans-serif"],
+      geistSans: ["var(--font-geistSans)", "sans-serif"],
     },
     fontSize: {
       "3xs": "clamp(0.65rem, 0.064vw + 0.60rem, 0.69rem)",

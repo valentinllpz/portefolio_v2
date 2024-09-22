@@ -38,9 +38,11 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+
+
+const integralCF = localFont({
+  src: "./fonts/integralcf-bold.otf",
+  variable: "--font-integral-cf",
   weight: "100 900",
 });
 
@@ -52,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
+        className={`${geistSans.variable} ${integralCF.variable} antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
       >
         <Navbar />
         <div className="bg-dark/80 backdrop-blur-3xl">

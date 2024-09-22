@@ -1,7 +1,9 @@
+import Link from "next/link";
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import SocialMediasIcons from "./SocialMediasIcons";
 
 const Footer: React.FC = () => {
   return (
@@ -11,10 +13,7 @@ const Footer: React.FC = () => {
           <FaLocationArrow size={20} />
           <span>Paris, FR / Zurich, CH</span>
         </div>
-        <div className="flex flex-row space-x-4">
-          <FaLinkedinIn size={20} />
-          <FaGithub size={20} />
-        </div>
+        <SocialMediasIcons />
       </div>
       <span>© 2024 valentinlugandlopez.dev</span>
     </footer>
