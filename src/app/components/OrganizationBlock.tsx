@@ -38,7 +38,7 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
               name
             )}
           </span>
-          <span className="uppercase opacity-80">
+          <span className="uppercase opacity-70">
             {startDate} - {endDate}
           </span>
         </div>

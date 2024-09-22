@@ -66,7 +66,7 @@ const EducationSection: React.FC = () => {
       </OrganizationBlock>
       <OrganizationBlock
         iconPath="/images/univrouen.png"
-        role="LEA Commerce International"
+        role="International Business"
         name="Université de Rouen"
         link="https://www.univ-rouen.fr/"
         startDate="September 2013"

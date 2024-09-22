@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <MenuItem href="/#education">Education</MenuItem>
         <MenuItem href="/#contact">Contact</MenuItem>
       </div>
-      <Button className="hidden lg:flex">Resume</Button>
+      <Button className="hidden lg:flex uppercase text-sm">Resume</Button>
       <BurgerButton
         isOpen={openMobileMenu}
         onClick={() => {

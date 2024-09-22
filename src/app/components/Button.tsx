@@ -4,7 +4,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button: FC<ButtonProps> = ({ children, className, ...props }) => {
   const baseClasses =
-    "px-4 py-2 rounded-full bg-transparent border border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-light";
+    "px-4 py-2 rounded-full bg-transparent border border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-light transition duration-200 ease-in-out";
 
   return (
     <button className={`${baseClasses} ${className}`} {...props}>

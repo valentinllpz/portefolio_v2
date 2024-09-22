@@ -32,46 +32,17 @@ const config: Config = {
     },
     extend: {
       keyframes: {
-        reveal: {
-          "0%": {
-            "transform-style": "preserve-3d",
-            "transform-origin": "left",
-            "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
-            transform: "translate(0%, 25%)",
-          },
-          "100%": {
-            "transform-style": "preserve-3d",
-            "transform-origin": "left",
-            "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-            transform: "translate(0%, 0%)",
-          },
-        },
-        slideUp: {
-          "0%": {
-            opacity: "0",
+        "gradient-move": {
+          "0%, 100%": {
+            "background-position": "0% 50%",
           },
           "50%": {
-            transform: "translateY(5%)",
-            opacity: "0",
-          },
-          "100%": {
-            transform: "translateY(0%)",
-            opacity: "1",
-          },
-        },
-        pulse: {
-          "0% 100%": {
-            opacity: "5%",
-          },
-          "50%": {
-            opacity: "0",
+            "background-position": "100% 50%",
           },
         },
       },
       animation: {
-        reveal: "reveal 2s cubic-bezier(.23, 1, .32, 1) forwards",
-        slideUp: "slideUp 1.2s cubic-bezier(.43,.25,.21,.83) forwards",
-        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "gradient-move": "gradient-move 5s ease infinite",
       },
     },
   },
