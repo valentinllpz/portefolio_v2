@@ -39,7 +39,6 @@ const geistSans = localFont({
   weight: "100 900",
 });
 
-
 const integralCF = localFont({
   src: "./fonts/integralcf-bold.otf",
   variable: "--font-integral-cf",

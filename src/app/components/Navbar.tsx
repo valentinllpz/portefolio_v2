@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           height={32}
           width={32}
         />
-        <span className="uppercase font-bold">Valentin Lugand Lopez</span>
+        <span className="uppercase font-integral">Valentin Lugand Lopez</span>
       </Link>
       <div className="hidden lg:flex flex-row space-x-12 uppercase text-sm">
         <MenuItem href="/#aboutme">About me</MenuItem>
