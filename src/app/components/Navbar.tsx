@@ -15,15 +15,15 @@ const Navbar: React.FC = () => {
       <Link
         href="/"
         onClick={() => setOpenMobileMenu(false)}
-        className="flex items-center space-x-4 z-30"
+        className="flex items-center space-x-2 lg:space-x-4 z-30"
       >
         <Image
           src="/images/logo.png"
           alt="Valentin Lugand Lopez logo"
-          height={32}
-          width={32}
+          height={20}
+          width={20}
         />
-        <span className="uppercase font-integral">Valentin Lugand Lopez</span>
+        <span className="uppercase font-integral text-sm lg:text-base">Valentin Lugand Lopez</span>
       </Link>
       <div className="hidden lg:flex flex-row space-x-12 uppercase text-sm">
         <MenuItem href="/#aboutme">About me</MenuItem>

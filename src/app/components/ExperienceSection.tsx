@@ -20,12 +20,9 @@ const ExperienceSection: React.FC = () => {
           My mission at Motto is to maintain and develop new features for the
           website, mobile application, operations management platform and API as
           part of a small agile technical team with shared responsibilities.
-          <br />
-          Mobile app: React Native, TypeScript, Tailwind CSS
-          <br />
-          Website: NextJS, React, Typescript, Tailwind CSS, CMS Headless Sanity
-          <br />
-          API: Ruby on Rails
+          <br />I work with React Native, TypeScript, and Tailwind CSS for the
+          mobile app. For the website, I use NextJS, React, TypeScript, Tailwind
+          CSS, and Headless CMS Sanity. The API is built using Ruby on Rails.
         </p>
       </OrganizationBlock>
       <OrganizationBlock

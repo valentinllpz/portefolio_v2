@@ -6,14 +6,14 @@ import TopSection from "./components/TopSection";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] px-4 lg:px-12">
+    <div className="px-4 lg:px-12">
       <TopSection />
       <div className="flex flex-col items-center justify-center space-y-16">
         <AboutSection />
         <ExperienceSection />
         <EducationSection />
         <ContactSection />
-      </div>
+      </div> 
     </div>
   );
 }

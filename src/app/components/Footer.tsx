@@ -7,13 +7,13 @@ import SocialMediasIcons from "./SocialMediasIcons";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-row items-center justify-between w-full px-4 lg:px-12 py-4 bg-gradient-to-t from-dark to-transparent to-50%">
+    <footer className="flex flex-col space-y-2 lg:flex-row lg:items-center lg:justify-between w-full p-4 lg:px-12 bg-gradient-to-t from-dark to-transparent to-50% text-sm">
       <div className="flex flex-row space-x-12">
-        <div className="flex flex-row space-x-4">
-          <FaLocationArrow size={20} />
+        <div className="flex flex-row space-x-2">
+          <FaLocationArrow size={16} />
           <span>Paris, FR / Zurich, CH</span>
         </div>
-        <SocialMediasIcons />
+        <SocialMediasIcons size={16} />
       </div>
       <span>© 2024 valentinlugandlopez.dev</span>
     </footer>
