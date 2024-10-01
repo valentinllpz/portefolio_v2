@@ -15,7 +15,8 @@ import {
   siKubernetes,
   siGithub,
   siGit,
-  si42,
+  siCplusplus,
+  siC,
   SimpleIcon,
 } from "simple-icons";
 
@@ -75,8 +76,9 @@ export const SkillCloud = React.memo(() => {
     siKubernetes,
     siGithub,
     siGit,
+    siCplusplus,
     siIterm2,
-    si42,
+    siC,
   ];
 
   return <Cloud {...cloudProps}>{getPortfolioIcons({ icons })}</Cloud>;

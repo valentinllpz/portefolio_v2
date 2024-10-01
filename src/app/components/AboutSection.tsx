@@ -4,7 +4,7 @@ import Section from "./Section";
 const AboutSection: React.FC = () => {
   return (
     <Section
-      title={"About me"}
+      title="About me"
       subtitle="Read about my expertise as a developer at work and get to know the personal interests that keep me inspired outside of the office."
     >
       <div className="flex flex-col space-y-4">
