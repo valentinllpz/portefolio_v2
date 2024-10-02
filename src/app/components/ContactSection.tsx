@@ -6,11 +6,11 @@ const ContactSection: React.FC = () => {
   return (
     <Section
       title="Contact"
-      subtitle="I am open to new roles in Paris, Zurich and remote. If my profile sparked your interest, feel free to reach out with any questions or inquiries and I will get back to you quickly."
+      subtitle="I’m open to new opportunities in Paris, Zurich, or remote. If my profile caught your interest, feel free to reach out with any questions or enquiries, and I’ll respond promptly."
     >
-      <div className="flex flex-1 justify-center items-center lg:px-32">
-        <div className="flex flex-col space-y-12 lg:overflow-hidden ">
-          <div className="flex flex-col gap-4 items-center lg:flex-row lg:gap-8">
+      <div className="flex flex-1 justify-center items-center xl:px-32">
+        <div className="flex flex-col space-y-12">
+          <div className="flex flex-col gap-4 items-center justify-center lg:flex-row lg:gap-8">
             <Image
               src="/images/valentinlugandlopez.png"
               alt="Valentin Lugand Lopez"
@@ -18,14 +18,17 @@ const ContactSection: React.FC = () => {
               height={130}
               className="object-cover"
             />
-            <div className="flex flex-col font-integral font-black text-2xl uppercase">
+            <div className="flex flex-col font-integral font-black text-xl xl:text-2xl uppercase">
               Valentin Lugand Lopez
               <span className="opacity-70">Full Stack Developer</span>
             </div>
           </div>
-          <span className="text-2xl lg:text-4xl">
+          <a
+            href="mailto:hello@valentinlugandlopez.dev"
+            className="text-2xl lg:text-3xl xl:text-4xl"
+          >
             hello@valentinlugandlopez.dev
-          </span>
+          </a>
         </div>
       </div>
     </Section>

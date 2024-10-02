@@ -16,7 +16,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isVisible }) => (
       }
     )}
   >
-    <div className="flex flex-1 flex-col items-center justify-center space-y-12 uppercase font-medium text-lg">
+    <div className="flex flex-1 flex-col items-center justify-center space-y-8 uppercase text-lg">
       <MenuItem href="/#aboutme">About me</MenuItem>
       <MenuItem href="/#experience">Experience</MenuItem>
       <MenuItem href="/#education">Education</MenuItem>

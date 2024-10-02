@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${integralCF.variable} antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
+        className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
       >
         <Navbar />
         <div className="bg-dark/80 backdrop-blur-3xl">

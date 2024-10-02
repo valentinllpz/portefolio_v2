@@ -5,41 +5,31 @@ const AboutSection: React.FC = () => {
   return (
     <Section
       title="About me"
-      subtitle="Read about my expertise as a developer at work and get to know the personal interests that keep me inspired outside of the office."
+      subtitle="Learn about my work as a developer and the personal interests that keep me inspired outside the office."
     >
       <div className="flex flex-col space-y-4">
-        <span className="font-bold uppercase">→ On the professional side</span>
         <p>
-          I am an experienced web and mobile developer with a natural affinity
-          for Frontend technologies, while maintaining strong capabilities in
-          both Frontend and Backend development. I have experience in building
-          web applications from scratch, from the design to the deployment. I am
-          passionate about creating beautiful and efficient applications that
-          provide a great user experience. I stand out for my ability to solve
-          complex technical problems and adapt quickly to a new environment. My
-          versatile background, which includes a career change after a Masters
-          in International Business, strengthens my ability to identify product
-          needs and collaborate effectively. I am looking for new challenges to
-          continue to develop my skills, and I am highly motivated by the idea
-          of training in new technologies.
+          I’m an experienced web and mobile developer with a natural affinity
+          for UI and Frontend technologies, while maintaining strong
+          capabilities in both Frontend and Backend development. I have a solid
+          track record of building web applications from the ground up, taking
+          projects through design, development, and deployment. I am passionate
+          about creating efficient and visually appealing applications that
+          prioritize a great user experience. I stand out for my problem-solving
+          skills and ability to adapt quickly, and I also excel in tackling
+          complex technical challenges. My diverse background, including a
+          career shift after earning a Master’s in International Business,
+          enhances my ability to understand product needs and collaborate
+          effectively across teams. I’m always looking for new challenges to
+          further develop my skills and am eager to learn new technologies.
+          <br />
+          <br />
+          Outside of work, I’m a creative person who enjoys music, often
+          spending time playing guitar and piano. Fitness is also a big part of
+          my life, and I train consistently at the gym four to five times a week
+          year-round. In my downtime, I like to unwind by hanging out with
+          friends, playing video games, or catching up on series.
         </p>
-      </div>
-      <div className="flex flex-col space-y-4">
-        <span className="font-bold uppercase">→ On the personal side</span>
-        <ul>
-          <li>
-            Creativity - I spend a lot of my free time listening to music, or
-            playing guitar and piano.
-          </li>
-          <li>
-            Health & fitness - I train at the gym 4 ~ 5 times per week all year
-            long.
-          </li>
-          <li>
-            Leisures - I enjoy spending time with my friends as well as some
-            time alone playing video games or watching series.
-          </li>
-        </ul>
       </div>
     </Section>
   );
