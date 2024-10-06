@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import HorizontallyScrollableDiv from "./HorizontallyScrollableDiv";
+import path from "path";
+import fs from "fs";
 
 interface OrganizationBlockProps {
   iconPath: string;
@@ -21,8 +24,20 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
   endDate,
   children,
 }) => {
+  const imagesDirectory = path.join(process.cwd(), `public/images/${name}`);
+  const imagesPaths: string[] = [];
+
+  try {
+    const filenames = fs.readdirSync(imagesDirectory);
+    filenames.forEach((filename) => {
+      if (filename.endsWith(".png")) {
+        imagesPaths.push(`/images/${name}/${filename}`);
+      }
+    });
+  } catch (error) {}
+
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4 bg-light/[0.08] rounded-lg p-4 ">
       <div className="flex flex-row space-x-4">
         <div className="min-w-[50px] min-h-[50px] relative">
           <Image src={iconPath} alt={name} width={50} height={50} />
@@ -44,6 +59,23 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
         </div>
       </div>
       {children}
+      <div className="max-w-[85vw] md:max-w-[55vw] overflow-hidden">
+        <HorizontallyScrollableDiv>
+          <div className="flex flex-row space-x-4">
+            {imagesPaths.length > 0 &&
+              imagesPaths.map((imagePath, index) => (
+                <div key={imagePath} className="relative w-[400px] h-[200px]">
+                  <Image
+                    src={imagePath}
+                    alt={`${name} ${index + 1}`}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
+              ))}
+          </div>
+        </HorizontallyScrollableDiv>
+      </div>
     </div>
   );
 };
