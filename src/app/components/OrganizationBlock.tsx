@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HorizontallyScrollableDiv from "./HorizontallyScrollableDiv";
 import path from "path";
 import fs from "fs";
+import HorizontallyScrollableGallery from "./HorizontallyScrollableGallery";
 
 interface OrganizationBlockProps {
   iconPath: string;
@@ -59,23 +59,7 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
         </div>
       </div>
       {children}
-      <div className="max-w-[85vw] md:max-w-[55vw] overflow-hidden">
-        <HorizontallyScrollableDiv>
-          <div className="flex flex-row space-x-4">
-            {imagesPaths.length > 0 &&
-              imagesPaths.map((imagePath, index) => (
-                <div key={imagePath} className="relative w-[400px] h-[200px]">
-                  <Image
-                    src={imagePath}
-                    alt={`${name} ${index + 1}`}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              ))}
-          </div>
-        </HorizontallyScrollableDiv>
-      </div>
+      <HorizontallyScrollableGallery imagesPaths={imagesPaths} alt={name} />
     </div>
   );
 };

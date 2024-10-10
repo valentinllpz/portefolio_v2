@@ -9,17 +9,27 @@ import PointerHighlight from "./components/PointerHighlight";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "Valentin Lugand Lopez | Full-Stack Developer Portfolio",
+    template: "%s | Valentin Lugand Lopez Portfolio",
   },
-  description: "This is my portfolio.",
+  description:
+    "I'm a full-stack developer with experience in modern web technologies. This portfolio highlights my projects, skills, and achievements.",
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "Valentin Lugand Lopez | Full-Stack Developer Portfolio",
+    description:
+      "Explore my full-stack development portfolio featuring my top projects and accomplishments in web technologies.",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "Valentin Lugand Lopez Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: `${baseUrl}/images/preview.png`,
+        width: 1000,
+        height: 484,
+        alt: "Valentin Lugand Lopez Portfolio Cover Image",
+      },
+    ],
   },
   robots: {
     index: true,

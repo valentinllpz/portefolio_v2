@@ -1,5 +1,4 @@
 "use client";
-
 import cn from "classnames";
 import React from "react";
 import LeftButton from "../icons/LeftButton";
@@ -65,7 +64,7 @@ const HorizontallyScrollableDiv: React.FC<HorizontallyScrollableDivProps> = ({
       </div>
       <button
         className={cn(
-          "z-10 absolute top-1/2 left-0 p-2 bg-dark/50 opacity-50 rounded-r-lg transform -translate-y-1/2 transition duration-300 ease-in-out hover:opacity-100 hover:cursor-pointer",
+          "z-10 absolute top-1/2 left-0 p-2 bg-dark/30 rounded-r-lg transform -translate-y-1/2 transition duration-300 ease-in-out hover:bg-dark/50 hover:cursor-pointer",
           {
             hidden: !showLeftArrow,
           }
@@ -78,7 +77,7 @@ const HorizontallyScrollableDiv: React.FC<HorizontallyScrollableDivProps> = ({
 
       <button
         className={cn(
-          "z-10 absolute top-1/2 right-0 p-2 bg-dark/50 opacity-50 rounded-l-lg transform -translate-y-1/2 transition duration-200 ease-in-out hover:opacity-100 hover:cursor-pointer",
+          "z-10 absolute top-1/2 right-0 p-2 bg-dark/30 rounded-l-lg transform -translate-y-1/2 transition duration-200 ease-in-out hover:bg-dark/50 hover:cursor-pointer",
           {
             hidden: !showRightArrow,
           }

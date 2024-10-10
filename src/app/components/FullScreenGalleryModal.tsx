@@ -1,14 +1,12 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+"use client";
 import Image from "next/image";
-import { ProjectDetails } from "@/types/types";
-import { Dialog, Transition } from "@headlessui/react";
-import Cross from "@/icons/Cross";
-import { v4 as uuidv4 } from "uuid";
+import { Dialog, Transition, TransitionChild } from "@headlessui/react";
 import React from "react";
+import Cross from "../icons/Cross";
+import { Carousel } from "nuka-carousel";
 
 interface FullScreenGalleryModalProps {
-  project: ProjectDetails;
+  imagesPaths: string[];
   showModal: boolean;
   onClose: () => void;
 }
@@ -30,48 +28,44 @@ function useEscapeKey(callback: () => void) {
 }
 
 const FullScreenGalleryModal: React.FC<FullScreenGalleryModalProps> = ({
-  project,
+  imagesPaths,
   showModal,
   onClose,
 }) => {
   const images = [];
-  let exitButtonRef = React.useRef(null);
+  const exitButtonRef = React.useRef(null);
 
   useEscapeKey(() => {
     onClose();
   });
-
-  for (let i = 0; i < project.imagesCount; i++) {
+  for (let i = 0; i < imagesPaths.length; i++) {
     images.push(
-      <SplideSlide
-        key={uuidv4()}
+      <div
+        key={`slide-${i}`}
         className="relative flex shrink-0 h-[100dvh] w-[100dvw]"
       >
         <Image
-          key={uuidv4()}
-          src={project.imagesPath + i + ".jpg"}
+          src={imagesPaths[i]}
           fill
-          className="object-contain transition opacity-0 ease-in-out delay-100 duration-300"
-          onLoadingComplete={(image) =>
-            image.classList.remove("opacity-0")
-          }
-          sizes="(max-width: 768px) 100vw, 50vw"
-          alt={`${project.name} ${i}`}
+          className="transition opacity-0 ease-in-out delay-100 duration-300"
+          onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+          alt=""
           priority
           quality={60}
+          objectFit="contain"
         />
-      </SplideSlide>
+      </div>
     );
   }
 
   return (
-    <Transition.Root show={showModal} appear>
+    <Transition show={showModal}>
       <Dialog
         className="fixed top-0 left-0 h-[100dvh] w-[100dvw] z-30"
         initialFocus={exitButtonRef}
         onClose={() => {}}
       >
-        <Transition.Child
+        <TransitionChild
           enter="transition duration-200 ease-in-out"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
@@ -79,25 +73,22 @@ const FullScreenGalleryModal: React.FC<FullScreenGalleryModalProps> = ({
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="fixed h-full w-full bg-black" />
-          <button
-            ref={exitButtonRef}
-            className="fixed outline-none top-4 right-4 z-30 opacity-50 border-0 transition duration-200 ease-in-out hover:opacity-100 hover:cursor-pointer"
-            aria-label="Close modal"
-            onClick={() => onClose()}
-          >
-            <Cross height={42} width={42} />
-          </button>
-          <Splide
-            className="h-full w-full"
-            options={{ rewind: true, lazyLoad: true }}
-            aria-label={project.name}
-          >
-            {images}
-          </Splide>
-        </Transition.Child>
+          <div className="fixed h-full w-full bg-dark">
+            <button
+              ref={exitButtonRef}
+              className="fixed bg-light/20 rounded-full p-2 top-4 right-4 z-30 border-0 transition duration-200 ease-in-out hover:bg-light/25 hover:cursor-pointer"
+              aria-label="Close modal"
+              onClick={() => onClose()}
+            >
+              <Cross height={20} width={20} color="#FFFFFF"/>
+            </button>
+            <Carousel showArrows="always" showDots swiping wrapMode="wrap">
+              {images}
+            </Carousel>
+          </div>
+        </TransitionChild>
       </Dialog>
-    </Transition.Root>
+    </Transition>
   );
 };
 
