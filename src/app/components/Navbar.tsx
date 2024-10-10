@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import BurgerButton from "./BurgerButton";
 import MobileMenu from "./MobileMenu";
-import Button from "./Button";
 import MenuItem from "./MenuItem";
+import ResumeButton from "./ResumeButton";
 
 const Navbar: React.FC = () => {
   const [openMobileMenu, setOpenMobileMenu] = React.useState(false);
@@ -51,12 +51,10 @@ const Navbar: React.FC = () => {
         <MenuItem href="/#education">Education</MenuItem>
         <MenuItem href="/#contact">Contact</MenuItem>
         {showButton ? (
-          <Button className="lg:flex uppercase text-sm">Resume</Button>
+          <ResumeButton className="lg:flex" />
         ) : (
-          <Button className="lg:flex uppercase text-sm opacity-0">
-            Resume
-          </Button>
-        )}{" "}
+          <ResumeButton className="lg:flex opacity-0 cursor-default" />
+        )}
       </div>
       <BurgerButton
         isOpen={openMobileMenu}

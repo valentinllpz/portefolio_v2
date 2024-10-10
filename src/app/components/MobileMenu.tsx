@@ -1,6 +1,6 @@
 import cn from "classnames";
 import MenuItem from "./MenuItem";
-import Button from "./Button";
+import ResumeButton from "./ResumeButton";
 
 interface MobileMenuProps {
   isVisible: boolean;
@@ -21,9 +21,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isVisible }) => (
       <MenuItem href="/#experience">Experience</MenuItem>
       <MenuItem href="/#education">Education</MenuItem>
       <MenuItem href="/#contact">Contact</MenuItem>
-      <Button className="flex uppercase text-sm absolute bottom-12">
-        Resume
-      </Button>
+      <ResumeButton className="uppercase text-sm absolute bottom-12" />
     </div>
   </div>
 );

@@ -31,6 +31,7 @@ const HorizontallyScrollableGallery: React.FC<
                     alt={`${alt} ${index + 1}`}
                     fill
                     objectFit="cover"
+                    quality={50}
                   />
                 </div>
               ))}

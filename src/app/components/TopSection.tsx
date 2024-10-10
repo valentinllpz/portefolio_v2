@@ -1,6 +1,6 @@
 import React from "react";
 import { SkillCloud } from "./SkillCloud";
-import Button from "./Button";
+import ResumeButton from "./ResumeButton";
 
 const TopSection: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const TopSection: React.FC = () => {
           </span>
         </h1>
       </div>
-      <Button className="uppercase text-sm self-center">Resume</Button>
+      <ResumeButton className="self-center" />
     </div>
   );
 };
