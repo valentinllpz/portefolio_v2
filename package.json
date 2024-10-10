@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.1.9",
-    "@splidejs/react-splide": "0.7.12",
     "classnames": "^2.5.1",
     "next": "14.2.8",
     "nuka-carousel": "^8.0.1",
