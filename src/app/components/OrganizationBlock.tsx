@@ -59,7 +59,9 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
         </div>
       </div>
       {children}
-      <HorizontallyScrollableGallery imagesPaths={imagesPaths} alt={name} />
+      {imagesPaths.length > 0 && (
+        <HorizontallyScrollableGallery imagesPaths={imagesPaths} alt={name} />
+      )}
     </div>
   );
 };
