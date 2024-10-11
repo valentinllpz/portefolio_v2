@@ -5,6 +5,7 @@ import { baseUrl } from "./sitemap";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PointerHighlight from "./components/PointerHighlight";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -69,6 +70,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
       >
+        <Analytics />
         <Navbar />
         <PointerHighlight />
         <div className="bg-dark/80 backdrop-blur-3xl">
