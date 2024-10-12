@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
         }}
         className="lg:hidden z-30"
       />
-      <MobileMenu isVisible={openMobileMenu} />
+      <MobileMenu isVisible={openMobileMenu} setIsVisible={setOpenMobileMenu}/>
     </nav>
   );
 };

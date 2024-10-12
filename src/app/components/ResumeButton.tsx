@@ -6,7 +6,7 @@ interface ResumeButtonProps {
 
 const ResumeButton: React.FC<ResumeButtonProps> = ({ className }) => {
   const baseClasses =
-    "px-4 py-2 rounded-full bg-transparent border border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-light transition duration-200 ease-in-out uppercase text-sm";
+    "px-4 py-2 rounded-full bg-transparent border border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-light transition duration-200 ease-in-out uppercase";
 
   return (
     <a
