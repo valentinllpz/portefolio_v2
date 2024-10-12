@@ -4,7 +4,7 @@ import ResumeButton from "./ResumeButton";
 
 const TopSection: React.FC = () => {
   return (
-    <div className="flex flex-col h-screen py-12 -translate-y-8 md:-translate-y-0">
+    <div className="flex flex-col h-screen py-12 -translate-y-10 md:-translate-y-0">
       <div className="flex flex-col flex-1 items-center justify-center">
         <div className="absolute">
           <SkillCloud />
