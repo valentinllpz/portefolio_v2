@@ -76,11 +76,11 @@ const FullScreenGalleryModal: React.FC<FullScreenGalleryModalProps> = ({
           <div className="fixed h-full w-full bg-dark">
             <button
               ref={exitButtonRef}
-              className="fixed bg-light/20 rounded-full p-2 top-4 right-4 z-30 border-0 transition duration-200 ease-in-out hover:bg-light/25 hover:cursor-pointer"
+              className="fixed bg-light/25 rounded-full p-2 top-4 right-4 z-30 border-0 transition duration-200 ease-in-out hover:bg-light/25 hover:cursor-pointer"
               aria-label="Close modal"
               onClick={() => onClose()}
             >
-              <Cross height={20} width={20} color="#FFFFFF"/>
+              <Cross height={16} width={16} color="#FFFFFF"/>
             </button>
             <Carousel showArrows="always" showDots swiping wrapMode="wrap">
               {images}
