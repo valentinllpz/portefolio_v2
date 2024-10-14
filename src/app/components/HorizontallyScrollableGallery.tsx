@@ -16,7 +16,7 @@ const HorizontallyScrollableGallery: React.FC<
 
   return (
     <>
-      <div className="max-w-[85vw] md:max-w-[55vw] overflow-hidden">
+      <div className="overflow-hidden">
         <HorizontallyScrollableDiv>
           <div className="flex flex-row space-x-4">
             {imagesPaths.length > 0 &&

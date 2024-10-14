@@ -37,7 +37,7 @@ const OrganizationBlock: React.FC<OrganizationBlockProps> = ({
   } catch (error) {}
 
   return (
-    <div className="flex flex-col space-y-4 bg-light/[0.08] rounded-lg p-4 ">
+    <div className="flex flex-col space-y-4 bg-light/[0.08] rounded-lg p-4">
       <div className="flex flex-row space-x-4">
         <div className="min-w-[50px] min-h-[50px] relative">
           <Image src={iconPath} alt={name} width={50} height={50} />
