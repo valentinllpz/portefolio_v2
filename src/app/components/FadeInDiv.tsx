@@ -43,7 +43,7 @@ const FadeInDiv: React.FC<FadeInDivProps> = ({ children, containerStyle }) => {
       ref={divRef}
       className={cn(
         `${containerStyle} transition-all duration-1000 ease-in-out transform ${
-          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20 lg:-translate-x-20"
+          isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4 lg:-translate-x-12"
         }`
       )}
     >
