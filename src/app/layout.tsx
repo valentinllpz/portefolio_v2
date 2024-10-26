@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.jpg')]`}
+        className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.webp')]`}
       >
         <Analytics />
         <SpeedInsights />

@@ -18,6 +18,8 @@ import {
   siCplusplus,
   siC,
   SimpleIcon,
+  siRubyonrails,
+  siRuby,
 } from "simple-icons";
 
 const cloudProps: Omit<ICloud, "children"> = {
@@ -66,6 +68,8 @@ export const SkillCloud = React.memo(() => {
   const icons = [
     siTypescript,
     siJavascript,
+    siRuby,
+    siRubyonrails,
     siNextdotjs,
     siReact,
     siTailwindcss,
