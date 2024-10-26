@@ -4,7 +4,7 @@ import SocialMediasIcons from "./SocialMediasIcons";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="absolute bottom-0 flex flex-row items-center justify-between w-full bg-gradient-to-t from-dark to-transparent to-50% text-sm p-4 lg:px-12">
+    <footer className="flex flex-row items-center justify-between w-full bg-gradient-to-t from-dark to-transparent to-50% text-sm p-4 lg:px-12">
       <div className="flex flex-row space-x-12 justify-between">
         <div className="flex flex-row space-x-2">
           <FaLocationArrow size={16} />

@@ -69,15 +69,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased bg-dark text-light scroll-smooth bg-[url('/images/bg1.webp')]`}
+        className={`${geistSans.variable} ${integralCF.variable} font-geist antialiased text-light scroll-smooth bg-dark`}
       >
         <Analytics />
         <SpeedInsights />
         <Navbar />
         <PointerHighlight />
-        <div className="bg-dark/80 backdrop-blur-3xl">
-          <main>{children}</main>
-          <Footer />
+        <div className="bg-[url('/images/bg1.webp')]">
+          <div className="bg-dark/80 backdrop-blur-3xl">
+            <main>{children}</main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
