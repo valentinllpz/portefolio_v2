@@ -7,9 +7,12 @@ interface MenuItemProps extends LinkProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ children, ...props }) => {
   return (
-    <Link className="relative group" {...props}>
+    <Link
+      className="relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-light 
+    after:bg-light-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+      {...props}
+    >
       {children}
-      <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-light transform scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300" />
     </Link>
   );
 };
