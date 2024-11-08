@@ -30,7 +30,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isVisible, setIsVisible }) => (
       <MenuItem href="/#contact" onClick={() => setIsVisible(false)}>
         Contact
       </MenuItem>
-      <ResumeButton className="uppercase text-sm absolute bottom-12" />
+      <ResumeButton />
     </div>
   </div>
 );
